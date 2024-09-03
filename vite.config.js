@@ -6,7 +6,6 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
 	return {
-		base: '/goit-js-hw-10/', // Эта строка устанавливает базовый путь для всех статических ресурсов проекта
 		define: {
 			[command === 'serve' ? 'global' : '_global']: {},
 		},
