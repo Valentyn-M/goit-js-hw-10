@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Timer</title>
+  <script type="module" crossorigin src="/vanilla-app-template/1-timer.js"></script>
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-D9L3Qz0t.js">
+  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/1-timer-Ctp4AOmU.css">
+  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-DkpDVd_l.css">
+</head>
+
+<body>
+
+	<input class="datetime-input" id="datetime-picker" type="text" />
+	<button class="datetime-btn" data-start type="button" disabled>Start</button>
+
+	<div class="timer">
+		<div class="field">
+			<span class="value" data-days>00</span>
+			<span class="label">Days</span>
+		</div>
+		<div class="field">
+			<span class="value" data-hours>00</span>
+			<span class="label">Hours</span>
+		</div>
+		<div class="field">
+			<span class="value" data-minutes>00</span>
+			<span class="label">Minutes</span>
+		</div>
+		<div class="field">
+			<span class="value" data-seconds>00</span>
+			<span class="label">Seconds</span>
+		</div>
+	</div>
+
+</body>
+
+</html>
