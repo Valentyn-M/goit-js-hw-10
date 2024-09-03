@@ -29,7 +29,7 @@ const iziToastOptions = {
 	messageColor: "#fff",
 	messageSize: "16px",
 	messageLineHeight: "1.5",
-	iconUrl: "/img/error.svg",
+	iconUrl: new URL('../img/error.svg', import.meta.url).href,
 	iconColor: "#fff",
 	close: true,
 	closeOnEscape: true,
