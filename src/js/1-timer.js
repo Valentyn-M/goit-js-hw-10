@@ -29,13 +29,13 @@ const iziToastOptions = {
 	messageColor: "#fff",
 	messageSize: "16px",
 	messageLineHeight: "1.5",
-	iconUrl: "../img/error.svg",
+	iconUrl: "/img/error.svg",
 	iconColor: "#fff",
 	close: true,
 	closeOnEscape: true,
 	progressBarColor: "#b51b1b",
 	position: "topRight",
-	timeout: 5000,
+	timeout: 500000,
 	animateInside: false,
 	transitionIn: "bounceInLeft"
 };
