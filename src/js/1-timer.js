@@ -33,7 +33,7 @@ const iziToastOptions = {
 	iconColor: "#fff",
 	close: true,
 	closeOnEscape: true,
-	progressBarColor: "#ffbebe",
+	progressBarColor: "#b51b1b",
 	position: "topRight",
 	timeout: 5000,
 	animateInside: false,

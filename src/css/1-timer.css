@@ -1,16 +1,18 @@
 /* Додатковий імпорт стилів */
 @import url('flatpickr/dist/flatpickr.min.css');
 
-/* Додатковий імпорт стилів */
-@import url('izitoast/dist/css/iziToast.min.css');
-
 body {
-	padding: 15px;
-	position: relative;
+	padding: 16px;
+}
+
+.datetime-wrapper {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
 }
 
 .datetime-input {
-	display: inline-flex;
+	display: flex;
 	gap: 8px;
 	width: 272px;
 	height: 40px;
@@ -19,7 +21,6 @@ body {
 	padding: 8px 16px;
 	outline: none;
 	transition: border-color 0.3s ease 0s;
-	margin-right: 8px;
 }
 
 .datetime-input:hover {
@@ -41,7 +42,7 @@ body {
 	padding: 8px 16px;
 	width: 75px;
 	height: 40px;
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-color: #4e75ff;
@@ -83,14 +84,23 @@ body {
 	text-transform: uppercase;
 }
 
-.iziToast {
-	font-family: "Montserrat", sans-serif;
-	letter-spacing: 0.03em;
+@media (max-width: 380px) {
+	.timer {
+		margin-top: 28px;
+		gap: 16px;
+	}
+
+	.value {
+		font-size: 36px;
+	}
+
+	.label {
+		text-transform: capitalize;
+	}
 }
 
-.iziToast>.iziToast-close {
-	background-image: url("../img/close.svg");
-	background-size: 16px;
-	opacity: .8;
-	transition: opacity 0.3s ease 0s;
+/* ========================================================================================================================== */
+
+.iziToast>.iziToast-progressbar {
+	background-color: #ffbebe;
 }
