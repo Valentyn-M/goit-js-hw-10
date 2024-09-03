@@ -6,11 +6,37 @@
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Snackbar</title>
-  <script type="module" crossorigin src="/vanilla-app-template/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-DkpDVd_l.css">
+  <script type="module" crossorigin src="/vanilla-app-template/2-snackbar.js"></script>
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-Dov3POoy.js">
+  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/2-snackbar-DRi9kCux.css">
+  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-DZ1vHFOd.css">
 </head>
 
 <body>
+
+	<form class="form">
+		<label class="form-label">
+			Delay (ms)
+			<input class="form-input" type="number" name="delay" required />
+		</label>
+
+		<fieldset class="form-fieldset">
+			<legend class="form-legend">State</legend>
+			<label class="form-label-radio">
+				<input class="form-input-radio visually-hidden" type="radio" name="state" value="fulfilled" required /><span
+					class="form-input-radio-icon"></span>
+				Fulfilled
+			</label>
+			<label class="form-label-radio">
+				<input class="form-input-radio visually-hidden" type="radio" name="state" value="rejected" required /><span
+					class="form-input-radio-icon"></span>
+				Rejected
+			</label>
+		</fieldset>
+
+		<button class="form-btn" type="submit">Create notification</button>
+	</form>
 
 
 </body>
